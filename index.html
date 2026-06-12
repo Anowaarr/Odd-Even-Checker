@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 30</title>
+    <link href="./src/output.css" rel="stylesheet">
+    
+</head>
+<body class="bg-gray-100 min-h-screen font-sans p-4 sm:p-8">
+
+    <div class="max-w-md mx-auto space-y-12">
+        
+        <!-- Main App Header -->
+        <div class="text-center">
+            <h1 class="text-4xl font-extrabold text-blue-700 mb-2">Eid Bonus HW</h1>
+            <p class="text-gray-600">Odd Even CALCULATOR.</p>
+        </div>
+
+        <!-- ========================================= -->
+        <!-- TOOL 1: EVEN / ODD CALCULATOR             -->
+        <!-- ========================================= -->
+        <section class="bg-white p-6 sm:p-8 rounded-xl shadow-md border-t-4 border-indigo-500">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Even or Odd?</h2>
+            
+            <div class="flex flex-col gap-4">
+                <div>
+                    <input 
+                        type="number" 
+                        id="numberInput" 
+                        placeholder="Enter any number..." 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition text-lg"
+                    >
+                </div>
+                
+                <button 
+                    onclick="checkEvenOdd()" 
+                    class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition duration-200 text-lg shadow-sm"
+                >
+                    Check Number
+                </button>
+
+                <div id="resultArea" class="hidden mt-2 p-4 rounded-lg text-center font-bold text-xl">
+                    <!-- JS injects result here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- A visual divider between the two tools -->
+        <hr class="border-gray-300">
+
+        <!-- ========================================= -->
+        <!-- TOOL 2: MULTIPLICATION TABLES (1-100)     -->
+        <!-- ========================================= -->
+        <section>
+            <div class="text-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Multiplication Tables</h2>
+                <p class="text-sm text-gray-500">Scroll to view 1 through 100</p>
+            </div>
+
+            <!-- Single column container for the tables -->
+            <div id="tables-container" class="flex flex-col gap-6">
+                <!-- JS injects the 100 table cards here -->
+            </div>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
